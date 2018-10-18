@@ -39,6 +39,7 @@ let answer = $('[name="branch1"]:checked').val();
 	$('.branchpart[value="' + answer + '"]').addClass("active");
 })
 
+//reveal results
 $('#submit').click(function(severity){
 	//let	severityLevel = this.value + '_advice';
 	let levels = ['Low', 'Moderate', 'Severe'];
