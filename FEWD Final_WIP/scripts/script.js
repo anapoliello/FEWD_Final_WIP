@@ -39,19 +39,20 @@ let answer = $('[name="branch1"]:checked').val();
 	$('.branchpart[value="' + answer + '"]').addClass("active");
 })
 
-$('#submitted').click(function(severity){
+$('#submit').click(function(severity){
 	let	severityLevel = this.value + '_advice';
-	let levels = ['low', 'moderate', 'severe'];
+	let levels = ['Low', 'Moderate', 'Severe'];
 	$('#submitted').addClass('active');
-		if (levels <= 3) {
-			severityLevel = 'low';
+		if (totalScore <= 3) {
+			severityLevel = 'Low';
 		}
-		else if (levels >= 8) {
-			severityLevel = 'severe';
+		else if (totalScore >= 8) {
+			severityLevel = 'Severe';
 		}
 		else {
-			severityLevel = 'moderate';
+			severityLevel = 'Moderate';
 		}
+	 $('.severity-level').text(severityLevel);
+	 $('.severity-level').addClass('active')
 	
-	//totalScore = 0
 });
