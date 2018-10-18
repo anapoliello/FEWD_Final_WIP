@@ -46,6 +46,8 @@ ul {
 footer {
 	font-size: 12px;
 	color: #A44C21;
+	margin: 20px;
+	padding-bottom: 10px;
 }
 
 /* css use in js */
@@ -69,11 +71,6 @@ footer {
 #submitted.active {
 	display: block;
 }
-
-
-
-
-
 
 
 
